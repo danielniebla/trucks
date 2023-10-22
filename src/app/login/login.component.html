@@ -1,0 +1,28 @@
+<div>
+    <form class="clr-form"  (ngSubmit)="login()" >
+        <div class="clr-form-control">
+          <label  class="clr-control-label">usuario</label>
+          <div class="clr-control-container " >
+            <div class="clr-input-wrapper " appClickAway>
+              <input type="text" id="user" name="user" placeholder="Escriba aqui" class="clr-input" [(ngModel)]="user"/>
+              <cds-icon class="clr-validate-icon" shape="exclamation-circle"></cds-icon>
+            </div>
+            <span class="clr-subtext">Escriba su usuario</span>
+          </div>
+        </div>
+        <div class="clr-form-control">
+          <label  class="clr-control-label">contraseña</label>
+            <div class="clr-control-container " >
+              <div class="clr-input-wrapper " appClickAway>
+                <input type="password" id="password" name="password" placeholder="Escriba aqui" class="clr-input"  [(ngModel)]="password"/>
+                <cds-icon class="clr-validate-icon" shape="exclamation-circle"></cds-icon>
+              </div>
+              <span class="clr-subtext">Escriba su contraseña</span>
+            </div>
+            <div class="button">
+                <button class="btn btn-outline" type="submit">Entrar</button>
+                <span class="clr-subtext" id="error"></span>
+            </div>
+        </div>
+      </form>
+  </div>

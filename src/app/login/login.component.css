@@ -1,0 +1,23 @@
+.clr-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    box-shadow: .2rem .2rem .5rem 0rem var(--blue) ;  
+    -webkit-box-shadow: .2rem .2rem .5rem 0rem var(--blue);
+    -moz-box-shadow: .2rem .2rem .5rem 0rem var(--blue) ;
+    border-radius: 10%;
+    padding: 2rem;
+}
+.button{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.btn{
+    align-self: center;
+}
+#error{
+    color: red;
+}
